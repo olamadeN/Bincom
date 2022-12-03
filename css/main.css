@@ -1,0 +1,250 @@
+
+@font-face{
+    src: url(fonts/Montserrat/Montserrat-Black.ttf);
+    font-family:mont;
+}
+html{
+    scroll-behavior: smooth !important;
+}
+body{
+    font-family: mont;
+    font-size: 18px;
+    background: #E5E5E5 !important;
+
+}
+.dark{
+    background: #16231C !important;
+    color:#F3F3F3 !important;
+
+}
+#nav-logo{
+    width:70%;
+}
+.nav-link{
+  color: #2f2f2f;  
+}
+.nav-link:hover{
+    color: #2f2f2f;
+}
+nav div ul li{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+div.intro{
+    background: transparent;
+    padding-top: 70px;
+    margin: 0 19%;
+    padding:70px 0;
+}
+.intro .intro-card h1{
+    font-weight: 700;
+    font-size:45px;
+}
+.intro .intro-card .sub-heading{
+    color: #468692;
+    font-weight: 600;
+    letter-spacing: 0.19em;
+}
+.button{
+    font-weight: 600;
+    color: #F3F3F3;
+    background: #468692;
+    border: solid 1px #468692;
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+}
+img#intro-pic{
+    margin: 0;
+    padding: 0;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-top-right-radius: 30%;
+}
+
+/* general content */
+.heading{
+    font-weight: 700;
+    font-size:40px;
+    text-transform: capitalize;
+    line-height: 80px;
+    margin-top: 65px;
+}
+.dot{
+    color: #468692;
+    font-weight: 600;
+}
+.content{
+    font-weight: 500;
+}
+
+/* About Me */
+.about-me{
+    margin-top: 70px;
+}
+.about-me div .button{
+    width:25%;
+}
+.photoGallery{
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap:0.2rem ;
+    gap: 0.7rem;
+}
+.gallery{
+    display: inline;
+    width:100%;
+    height:250px;
+}
+
+/* My Skills */
+.skills{
+    margin-top: 80px;
+}
+.skills .dropdown span{
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height:24px;
+}
+
+.skills .dropdown .drop-list{
+    margin-top: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    list-style: none;
+    line-height: 50px;
+    display: block;
+}
+.skills .dropdown .show{
+    display: none;
+}
+
+/* work history */
+.workHistory{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:3rem;
+}
+.historyItem{
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+}
+.historyItem h3{
+    font-size: 1rem;
+}
+.hisTitle{
+    color: #468692;
+}
+.historyItem h2{
+    font-size: 0.5rem;
+}
+
+/* my projects */
+.my-projects .project-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+}
+.my-projects .description{
+    font-weight: 500;
+    font-size: 12px;
+}
+.my-projects .card{
+    background:inherit;
+}
+
+/* contact form */
+.contact-me{
+    margin-bottom: 10%;
+}
+.contact-me form label div .form-heading{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #468692;
+    font-size: 18px;
+}
+.contact-me form{
+    margin-top: 8%;
+}
+.contact-me form .location{
+    margin-right:4.5%;
+}
+.contact-me form label div .form-detail{
+    font-weight: 700;
+    font-size: 12px;
+    font-weight: 500;
+}
+.contact-me form input{
+    width: 57%;
+    background: inherit;
+    border: solid 2px #C4C4C4;
+    font-weight: 600;
+}
+.contact-me form textarea{
+    width: 57%;
+    background: inherit;
+    border: solid 2px #C4C4C4;
+    font-weight: 600;
+}
+.contact-me form input#name{
+    border-top-right-radius: 35px;
+}
+.contact-me form textarea#location{
+    border-bottom-left-radius: 35px;
+}
+.contact-me form #button{
+    width:25%;
+    margin-right:40%;
+    margin-left: 27%; 
+    margin-top:30px;  
+    padding:1% 5%;
+}
+
+/*footer*/
+footer nav{
+    background: #468692;
+}
+footer nav div ul li{
+    font-size: 13px;
+}
+
+@media screen and (max-width:500px){
+    #nav-logo{
+        width:50%;
+    }
+    nav div ul li{
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 12px;
+        color: white;
+    }
+    .intro .intro-card button{
+        margin-bottom: 30px;
+    }
+    .skills .dropdown .drop-click div{
+        margin-bottom: 11px;
+    }
+    .contact-me form input{
+        width: 90%;
+        height: 50px;
+    }
+    .contact-me form textarea{
+        width: 90%;
+    }
+    .contact-me form #button{
+        width:40%;
+        padding:0% 5%;
+        margin-right:0%;
+        margin-left:0%; 
+        margin-top:5px; 
+        padding:1% 5%;
+    }
+    #footer{
+        display:none;
+    }
+}

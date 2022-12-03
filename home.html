@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nissi's Portfolio</title>
+    <script src="https://kit.fontawesome.com/779f9ee602.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="img/gallery/gal1.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+<body class="container" id="body">
+    <nav class="container navbar navbar-expand-lg navbar-light py-3 w-100">
+        <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+        </button>
+        <div class="navbar-brand" onclick="night_mode()">
+            <img id="mode-toggle-img" src="img/mode-switch.png" alt="logo" width="50%" height="">
+        </div> 
+        <div class="justify-content-center collapse navbar-collapse " id="navbarNav" >
+            <ul class="navbar-nav">
+                <li class="nav-item px-2">
+                    <a class="nav-link " id="nav-link-AM" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" id="nav-link-MS" href="#my-skills">My Skills</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" id="nav-link-MWH" href="#work-history">My Work History</a>
+                </li>
+                <li class="nav-item px-2">
+                    <a class="nav-link" id="nav-link-CM" href="#contact-me">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="intro" id="intro">
+        <div class="d-sm-flex" data-aos="fade-up">
+           
+            <div class="intro-card col-sm-5 col-lg-9">
+                <h1>        
+                    Hi,<br>I'm Nissi<span class="dot">.</span>
+                </h1>
+                <p class="sub-heading">WEB DEVELOPER</p>
+                <p class="content my-4">
+                    Hello, i'm Olamade Nissi Olumuyiwa, I am a web developer. I like building websites, especialy those with challenging designs, I like that satisfactory feeling I get when I reproduces a very complex design. I like learning new things and tricks and i am ready to work with you.
+                </p>
+                <button class="button w-50 p-2">Contact Me</button>
+            </div>
+            <img class="col-sm-4 col-lg-6" src="img/gallery/gal1.png" alt="" id="intro-pic">
+        </div>
+    </div>
+
+    <div class="about-me col-sm-10 float-right" id="about-me" data-aos="fade-up">
+        <h1 class="heading"> about me<span class="dot">.</span></h1>
+        <p class="content">
+            I’m a dedicated, efficient and self-motivated web developer building innovative and top-notched
+            web solutions. I have been on this journey for over three years now, I am profficient in front end technologies and i have dabbled into back-end for a while thus becoming skilled in django. My ultimate goal is to be a full stack developer. My hubbies are watching movies and anime, playing action and adventure games and I love inspirational cooking. I am fun to be with and I tend to make people laugh sometime unintentionally 
+        </p>
+        <button class="button p-2 mt-2">Download CV</button>
+        <h5 class="text-center mt-3"> <i>Get a glimpse into my awsome life</i> </h5>
+        <div class="photoGallery mt-3">
+            <img class="gallery" src="img/gallery/gal1.png" alt="">
+            <img class="gallery" src="img/gallery/gal4.jpg" alt="">
+            <img class="gallery" src="img/gallery/gal5.jpg" alt="">
+            <img class="gallery" src="img/gallery/gal6.jpg" alt="">
+            <img class="gallery" src="img/gallery/gal7.jpg" alt="">
+            <img class="gallery" src="img/gallery/gal8.jpg" alt="">
+        </div>          
+    </div>  
+
+    <div class="skills col-sm-10 float-right" id="my-skills" data-aos="fade-up" >
+        <h1 class="heading"> my skills<span class="dot">.</span></h1>
+        <div class="dropdown mt-5 d-sm-flex w-100" data-aos="fade-up">
+            <div class="col-sm-7 float-left p-0">
+                <span class="drop-click" onclick="show_list()">
+                    <img class="float-left mr-4" width="8%" src="img/Vector.png" alt="">
+                    <div class="p-0">
+                        <p class="p-0 m-0">Hard</p>
+                        <p class="p-0 m-0">Skills <i id="caret-down-1" class="ml-2 fas fa-caret-down"></i></p>
+                    </div>   
+                </span>
+                <ul class="drop-list ml-4" id="drop-list">
+                    <li>ReactJS</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>Django</li>
+                    <li>Python</li>
+                </ul>
+            </div> 
+            <div class="col-sm-7 float-right p-0 mb-2">
+                <span id="drop-click" onclick="show_list_2()">
+                    <img class="float-left mr-4 " width="8%" src="img/Vector (1).png" alt="">
+                    <div class="p-0">
+                        <p class="p-0 m-0">Soft</p>
+                        <p class="p-0 m-0">Skills <i id="caret-down-2" class="ml-2 fas fa-caret-down"></i></p>
+                    </div> 
+                </span>
+                <ul class="drop-list ml-4" id="drop-list-2">
+                    <li>Effective written and verbal communications</li>
+                    <li>Critical Thinking</li>
+                    <li>Team Work</li>
+                    <li>Innovation</li>
+                    <li>Work Ethics</li>
+                    <li>Leadership Skills</li>
+                </ul>
+            </div>
+        </div>
+
+       
+        </div>
+    </div>
+
+    <div class="work-history col-sm-10 float-right" id="work-history" data-aos="fade-up">
+        <h1 class="heading"> my work history<span class="dot">.</span></h1>
+        <div class="workHistory">
+            <article className="historyItem">
+                <h3 class="hisTitle">DTECH Support Services</h3>
+                <h6 class="text-muted">web developer(freelance)</h6>
+                <p class="description">
+                    <li>Designed the user interface of DTECH Agric website</li>
+                    <li>Built up the website using HTML, CSS, Bootstrap and Django and also hosted it online</li>
+                </p>    
+            </article>
+            <article className="historyItem">
+                <h3 class="hisTitle">Sinnot Technologies </h3>
+                <h6 class="text-muted">web developer(freelance)</h6>
+                <p class="description">
+                    <li>Built a website for Sinnot Technologies a solar company to take their business online</li>
+                    <li>Built the website using HTML, CSS and Bootstrap</li>
+                </p>    
+            </article>
+        </div>             
+    </div>
+
+    <div class="my-projects col-sm-10 float-right" data-aos="fade-up">
+        <h1 class="heading mb-5"> my projects<span class="dot">.</span></h1>
+        <div class="d-sm-flex">                    
+            <ul>
+                <li>Built sites from User Interface deigned by UI experts on figma.	</li>
+                <li>Built portfolio websites for peoples in diverse works of life using HTML, CSS, JS, bootstrap, React JS and Django</li>
+                <li>Recreated online templates using HTML, CSS, Bootstrap and JavaScript</li>
+                <li>Designed and Built a portfolio website for a media company(Hallel’s Media) to display and publicize their projects online. Equipped with the admin functionality to update the website at will using HTML, CSS, Bootstrap, Django</li>
+            </ul>         
+        </div>      
+    </div>
+
+    <div class="contact-me col-sm-10 float-right" id="contact-me" data-aos="fade-up">
+        <h1 class="heading"> contact me<span class="dot">.</span></h1>
+        <form action="" method="post">
+            <div class="d-sm-flex mb-4">
+                <label class="pr-5 mr-3" for="name" >
+                    <img src="img/phone.png" class="float-left p-0 mr-3" width="10%" alt="">
+                    <div class="float-right">
+                        <h5 class="form-heading p-0 m-0 ">call me</h5>
+                        <p class="form-detail p-0 m-0">+234 913 403 3259</p>
+                    </div>
+                    
+                </label>
+                <input class="px-5 py-0" type="text" name="hha" id="name" placeholder="Name">                
+            </div>
+            <div class="d-sm-flex mb-4">
+                <label class="pr-5 mr-1" for="email" >
+                    <img src="img/message.png" class="float-left p-0 mr-3" width="10%" alt="">
+                    <div class="float-right">
+                        <h5 class="form-heading p-0 m-0 ">Email Me</h5>
+                        <p class="form-detail p-0 m-0">olamademuyiwa@gmail.com</p>
+                    </div>
+                    
+                </label>
+                <input class=" px-5 py-0" type="email" name="hha" id="email" placeholder="Email">                
+            </div>
+            <div class="d-sm-flex mb-4">
+                <label class="pr-5 location" for="location" >
+                    <img src="img/location.png" class="float-left p-0 mr-3" width="10%" alt="">
+                    <div class="float-right">
+                        <h5 class="form-heading p-0 m-0 ">Location</h5>
+                        <p class="form-detail p-0 m-0">Lagos, Nigeria.</p>
+                    </div>
+                    
+                </label>
+                <textarea class=" px-5 py-4"  name="location" id="location" placeholder="Message" cols="52" rows="5"></textarea>     
+            
+            </div>
+            <button id="button" class="button">Send!</button>  
+        </form> 
+    </div>
+    <footer id="footer">
+        <nav class="container navbar navbar-expand-sm navbar-light py-2 px-4">
+            <div class="justify-content-center collapse navbar-collapse " id="navbarNav" >
+                <ul class="navbar-nav ">
+                    <li class="nav-item pr-4">
+                        <a class="nav-link" style="color: #F3F3F3;"  href="#intro">Intro</a>
+                    </li>
+                    <li class="nav-item pr-4">
+                        <a class="nav-link" style="color: #F3F3F3;"  href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" style="color: #F3F3F3;"  href="#my-skills">My Skills</a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a class="nav-link" style="color: #F3F3F3;"  href="#work-history">My Work History</a>
+                    </li>
+                    <li class="nav-item pl-4">
+                        <a class="nav-link" style="color: #F3F3F3;" href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </footer> 
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init(
+        {
+            offset:300,
+            duration:800,
+        }
+        );
+    </script>
+</body>
+</html>
+
